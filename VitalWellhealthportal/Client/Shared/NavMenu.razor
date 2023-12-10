@@ -15,7 +15,7 @@
             <Authorized>
                 <div class="nav-item px-3">
                     <NavLink class="nav-link" href="authentication/profile" Match="NavLinkMatch.All">
-                        <span class="oi oi-person" aria-hidden="true"></span> Hello,@context.User.Identity?.Name!
+                        <span class="oi oi-person" aria-hidden="true"></span> Hello, @context.User.Identity?.Name!
                     </NavLink>
                 </div>
                 <div class="nav-item px-3">
@@ -26,12 +26,12 @@
             </Authorized>
             <NotAuthorized>
                 <div class="nav-item px-3">
-                    <NavLink class="nav-link" href="authentication/register" Match="NavLinkMatch.All">
+                    <NavLink class="nav-link" href="https://dariuslogin.auth.us-east-1.amazoncognito.com/signup?client_id=343qbdg6at964qgstt9io9f0k7&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Flocalhost%3A44329" Match="NavLinkMatch.All">
                         <span class="oi oi-person" aria-hidden="true"></span> Register
                     </NavLink>
                 </div>
                 <div class="nav-item px-3">
-                    <NavLink class="nav-link" href="authentication/login" Match="NavLinkMatch.All">
+                    <NavLink class="nav-link" onclick="setTimeout(function(){ document.getElementById('loginDiv').style.display = 'none'; }, 2000);" href="https://dariuslogin.auth.us-east-1.amazoncognito.com/login?client_id=343qbdg6at964qgstt9io9f0k7&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Flocalhost%3A44329" Match="NavLinkMatch.All">
                         <span class="oi oi-account-login" aria-hidden="true"></span> Log in
                     </NavLink>
                 </div>
